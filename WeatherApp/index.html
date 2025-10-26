@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <h1 class="app-title">Weather Pro</h1>
+            <p class="app-subtitle">Get current conditions and a day by day forecast</p>
+            <div class="search-container">
+                <input type="text" id="locationInput" placeholder="Enter a city name...">
+                <button id="submitBtn">Get Weather</button>
+            </div>
+
+            <div id="loader" class="loader"></div>
+
+            <div id="weather-display-grid" class="weather-display-grid">
+                
+                <div class="current-weather-column">
+                    <div id="weather-info" class="weather-info-container">
+                        </div>
+                </div>
+
+                <div class="forecasts-column">
+                    <div id="hourly-forecast-info" class="hourly-forecast-container">
+                        </div>
+
+                    <div id="forecast-info" class="forecast-container">
+                        </div>
+                </div>
+
+            </div> <div id="error-message" class="error-container">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
