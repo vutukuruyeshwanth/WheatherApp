@@ -213,12 +213,11 @@ function displayDailyForecast(forecastList, timezone) {
         dailyData[date].temps.push(item.main.temp);
         dailyData[date].icons.push(item.weather[0].icon);
     }
-    
-    const sortedDates = Object.keys(dailyData).sort();
-    const todayString = getLocalDate(Date.now() / 1000);
 
-    // This is the key change: Filter out today's date, then take the next 5 days.
-    const futureDays = sortedDates.filter(date => date !== todayString).slice(0, 5);
+    const sortedDates = Object.keys(dailyData).sort();
+
+    // This is the key change: Take the first 5 days from the list.
+    const futureDays = sortedDates.slice(0, 5);
 
     const forecastDaysHTML = futureDays.map(date => {
         const dayData = dailyData[date];
