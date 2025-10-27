@@ -5,43 +5,28 @@ A clean and modern weather application that provides the current weather conditi
 
 **Live Demo:** [https://vutukuruyeshwanth.github.io/WheatherApp/WeatherApp/](https://vutukuruyeshwanth.github.io/WheatherApp/WeatherApp/)
 
-# Features:
-**Current Weather:** Get up-to-the-minute data for any city, including temperature, "feels like," humidity, wind speed, and sunrise/sunset times.
-**Dynamic Backgrounds:** The app's background gradient smoothly transitions to match the weather (e.g., sunny, rainy, cloudy, snowy).
-**Hourly Forecast:** See an 8-period (24-hour) scrolling forecast to plan your day.
-**5-Day Forecast:** View a 5-day forecast with high and low temperatures and weather icons.
-**Responsive Design:** A two-column layout on desktop that stacks into a single column on mobile devices.
-**Loading & Error States:** Includes a visual loader during API calls and clear error messages for bad requests (e.g., "City not found").
+## Feature
+* **Current Weather:** Get the real-time temperature and weather conditions for any city.
+* **Daily Forecast:** View a forecast for the upcoming days.
+* **Simple Interface:** A clean and easy-to-use search interface.
 
-# Technologies Used:
-**HTML5:** For the core structure and content.
-**CSS3:** For all styling, including the glassmorphism card, dynamic backgrounds, and responsive layout using Flexbox and Grid.
-**JavaScript (ES6+):** For all logic, 
-**Including:** async/await for handling API requests.
-DOM manipulation to dynamically display data.
-Date and time formatting based on location timezone.
+## Technologies Used
+* **HTML5:** For the application's structure.
+* **CSS3:** For styling and layout.
+* **JavaScript:** To handle user input, fetch data from a weather API, and dynamically update the page.
+* **Weather API:** (Assumed) Connects to a third-party weather API (like OpenWeatherMap, WeatherAPI, etc.) to get live data.
 
-# API:
-This project uses the OpenWeatherMap API to fetch all weather data.
-**1.**Current Weather API
-**2.**One Call API (for 5-day/hourly forecasts)
+## Getting Started
+To run this project locally:
 
-# Setup:
-To run this project locally, you need to provide your own OpenWeatherMap API key.
-
-Clone the repository:
+1.  Clone the repository:
     ```bash
     git clone [https://github.com/vutukuruyeshwanth/WheatherApp.git](https://github.com/vutukuruyeshwanth/WheatherApp.git)
     ```
-Navigate to the project directory:
+2.  Navigate to the project directory:
     ```bash
     cd WheatherApp/WeatherApp
     ```
-Open the script.js file.
-Find this line (around line 18):
-JavaScript
-const apiKey = "69ff544757dbe2aa26e3c00d45fae6d3";
-Replace the string with your own API key from OpenWeatherMap.
+3.  Open the `index.html` file in your favorite web browser.
 
 **Note:** If the app uses a specific API key, you may need to sign up for that weather service and add your own API key to the JavaScript file for the app to function locally.
-Open the index.html file in your browser to run the application.
