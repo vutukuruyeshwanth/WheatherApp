@@ -30,3 +30,6 @@ To run this project locally:
 3.  Open the `index.html` file in your favorite web browser.
 
 **Note:** If the app uses a specific API key, you may need to sign up for that weather service and add your own API key to the JavaScript file for the app to function locally.
+
+## Project Status
+This website was developed as part of an internship project. It serves as a portfolio piece showcasing skills in Full Stack web development.
